@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ebf41fc-dad3-4e8b-b14c-eab02dd0131e" name="Changes" comment="handover main method to springboot">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/AttendanceEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/DepartmentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/EmployeeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/LeaveBalanceEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/LeaveRequestEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/PayrollEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7ebf41fc-dad3-4e8b-b14c-eab02dd0131e" name="Changes" comment="UserEntity created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -116,7 +109,79 @@
       <option name="project" value="LOCAL" />
       <updated>1737126001760</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="AttendanceEntity created">
+      <option name="closed" value="true" />
+      <created>1737134373132</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134373132</updated>
+    </task>
+    <task id="LOCAL-00008" summary="DepartmentEntity created">
+      <option name="closed" value="true" />
+      <created>1737134389868</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134389868</updated>
+    </task>
+    <task id="LOCAL-00009" summary="EmployeeEntity created">
+      <option name="closed" value="true" />
+      <created>1737134402173</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134402173</updated>
+    </task>
+    <task id="LOCAL-00010" summary="LeaveBalanceEntity created">
+      <option name="closed" value="true" />
+      <created>1737134412400</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134412400</updated>
+    </task>
+    <task id="LOCAL-00011" summary="LeaveRequestEntity created">
+      <option name="closed" value="true" />
+      <created>1737134426182</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134426182</updated>
+    </task>
+    <task id="LOCAL-00012" summary="LeaveStatus enum created">
+      <option name="closed" value="true" />
+      <created>1737134447686</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134447686</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Role enum created">
+      <option name="closed" value="true" />
+      <created>1737134462689</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134462689</updated>
+    </task>
+    <task id="LOCAL-00014" summary="PayrollEntity created">
+      <option name="closed" value="true" />
+      <created>1737134475399</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134475399</updated>
+    </task>
+    <task id="LOCAL-00015" summary="UserEntity created">
+      <option name="closed" value="true" />
+      <created>1737134496047</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134496047</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -124,7 +189,16 @@
     <MESSAGE value="add dependencies" />
     <MESSAGE value="database configuration created" />
     <MESSAGE value="handover main method to springboot" />
-    <option name="LAST_COMMIT_MESSAGE" value="handover main method to springboot" />
+    <MESSAGE value="AttendanceEntity created" />
+    <MESSAGE value="DepartmentEntity created" />
+    <MESSAGE value="EmployeeEntity created" />
+    <MESSAGE value="LeaveBalanceEntity created" />
+    <MESSAGE value="LeaveRequestEntity created" />
+    <MESSAGE value="LeaveStatus enum created" />
+    <MESSAGE value="Role enum created" />
+    <MESSAGE value="PayrollEntity created" />
+    <MESSAGE value="UserEntity created" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserEntity created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
