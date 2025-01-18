@@ -4,19 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ebf41fc-dad3-4e8b-b14c-eab02dd0131e" name="Changes" comment="AttendanceController created">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/Attendance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/LeaveBalance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/LeaveRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/Payroll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/User.java" afterDir="false" />
+    <list default="true" id="7ebf41fc-dad3-4e8b-b14c-eab02dd0131e" name="Changes" comment="Config class created">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/SuccessResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/AttendanceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/DepartmentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/EmployeeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/LeaveBalanceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/LeaveRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/PayrollException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/UserException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AttendanceService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/AttendanceServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AttendanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AttendanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +60,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Spring/employee-management-backend/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Spring/employee-management-backend/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="employee-management-backend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -211,15 +225,130 @@
       <option name="project" value="LOCAL" />
       <updated>1737138358187</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Attendance dto created">
+      <option name="closed" value="true" />
+      <created>1737170763267</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170763282</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Department dto created">
+      <option name="closed" value="true" />
+      <created>1737170777175</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170777175</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Employee dto created">
+      <option name="closed" value="true" />
+      <created>1737170787346</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170787346</updated>
+    </task>
+    <task id="LOCAL-00021" summary="LeaveBalance dto created">
+      <option name="closed" value="true" />
+      <created>1737170799948</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170799948</updated>
+    </task>
+    <task id="LOCAL-00022" summary="LeaveRequest dto created">
+      <option name="closed" value="true" />
+      <created>1737170814349</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170814349</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Payroll dto created">
+      <option name="closed" value="true" />
+      <created>1737170830440</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170830440</updated>
+    </task>
+    <task id="LOCAL-00024" summary="User dto created">
+      <option name="closed" value="true" />
+      <created>1737170838304</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170838304</updated>
+    </task>
+    <task id="LOCAL-00025" summary="User repo created">
+      <option name="closed" value="true" />
+      <created>1737170855139</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170855139</updated>
+    </task>
+    <task id="LOCAL-00026" summary="PayrollRepository created">
+      <option name="closed" value="true" />
+      <created>1737170876510</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170876510</updated>
+    </task>
+    <task id="LOCAL-00027" summary="LeaveRequestRepository created">
+      <option name="closed" value="true" />
+      <created>1737170891191</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170891191</updated>
+    </task>
+    <task id="LOCAL-00028" summary="LeaveBalanceRepository created">
+      <option name="closed" value="true" />
+      <created>1737170902742</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170902742</updated>
+    </task>
+    <task id="LOCAL-00029" summary="EmployeeRepository created">
+      <option name="closed" value="true" />
+      <created>1737170920185</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170920185</updated>
+    </task>
+    <task id="LOCAL-00030" summary="DepartmentRepository created">
+      <option name="closed" value="true" />
+      <created>1737170932085</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170932085</updated>
+    </task>
+    <task id="LOCAL-00031" summary="AttendanceRepository created">
+      <option name="closed" value="true" />
+      <created>1737170956066</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170956066</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Config class created">
+      <option name="closed" value="true" />
+      <created>1737170997891</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1737170997892</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <MESSAGE value="add dependencies" />
-    <MESSAGE value="database configuration created" />
-    <MESSAGE value="handover main method to springboot" />
-    <MESSAGE value="AttendanceEntity created" />
     <MESSAGE value="DepartmentEntity created" />
     <MESSAGE value="EmployeeEntity created" />
     <MESSAGE value="LeaveBalanceEntity created" />
@@ -230,7 +359,22 @@
     <MESSAGE value="UserEntity created" />
     <MESSAGE value="changes" />
     <MESSAGE value="AttendanceController created" />
-    <option name="LAST_COMMIT_MESSAGE" value="AttendanceController created" />
+    <MESSAGE value="Attendance dto created" />
+    <MESSAGE value="Department dto created" />
+    <MESSAGE value="Employee dto created" />
+    <MESSAGE value="LeaveBalance dto created" />
+    <MESSAGE value="LeaveRequest dto created" />
+    <MESSAGE value="Payroll dto created" />
+    <MESSAGE value="User dto created" />
+    <MESSAGE value="User repo created" />
+    <MESSAGE value="PayrollRepository created" />
+    <MESSAGE value="LeaveRequestRepository created" />
+    <MESSAGE value="LeaveBalanceRepository created" />
+    <MESSAGE value="EmployeeRepository created" />
+    <MESSAGE value="DepartmentRepository created" />
+    <MESSAGE value="AttendanceRepository created" />
+    <MESSAGE value="Config class created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config class created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
