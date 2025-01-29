@@ -4,29 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ebf41fc-dad3-4e8b-b14c-eab02dd0131e" name="Changes" comment="AttendanceService created">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/DepartmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/LeaveBalanceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/LeaveRequestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PayrollController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/DepartmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/LeaveBalanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/LeaveRequestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PayrollService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/LeaveBalanceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/LeaveRequestServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/PayrollServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="7ebf41fc-dad3-4e8b-b14c-eab02dd0131e" name="Changes" comment="UserServiceImpl created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AttendanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AttendanceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/impl/AttendanceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/AttendanceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,20 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.employee-management-backend [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.employee-management-backend [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Spring/employee-management-backend/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "Maven.employee-management-backend [clean].executor": "Run",
+    "Maven.employee-management-backend [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Spring/bike/spring-backend",
+    "onboarding.tips.debug.path": "C:/Spring/employee-management-backend/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
@@ -103,150 +85,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737125298100</updated>
-    </task>
-    <task id="LOCAL-00001" summary="first commit">
-      <option name="closed" value="true" />
-      <created>1737125383605</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1737125383605</updated>
-    </task>
-    <task id="LOCAL-00002" summary="first commit">
-      <option name="closed" value="true" />
-      <created>1737125511430</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1737125511430</updated>
-    </task>
-    <task id="LOCAL-00003" summary="first commit">
-      <option name="closed" value="true" />
-      <created>1737125542931</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1737125542931</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add dependencies">
-      <option name="closed" value="true" />
-      <created>1737125934538</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1737125934538</updated>
-    </task>
-    <task id="LOCAL-00005" summary="database configuration created">
-      <option name="closed" value="true" />
-      <created>1737125962477</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1737125962477</updated>
-    </task>
-    <task id="LOCAL-00006" summary="handover main method to springboot">
-      <option name="closed" value="true" />
-      <created>1737126001760</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1737126001760</updated>
-    </task>
-    <task id="LOCAL-00007" summary="AttendanceEntity created">
-      <option name="closed" value="true" />
-      <created>1737134373132</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134373132</updated>
-    </task>
-    <task id="LOCAL-00008" summary="DepartmentEntity created">
-      <option name="closed" value="true" />
-      <created>1737134389868</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134389868</updated>
-    </task>
-    <task id="LOCAL-00009" summary="EmployeeEntity created">
-      <option name="closed" value="true" />
-      <created>1737134402173</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134402173</updated>
-    </task>
-    <task id="LOCAL-00010" summary="LeaveBalanceEntity created">
-      <option name="closed" value="true" />
-      <created>1737134412400</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134412400</updated>
-    </task>
-    <task id="LOCAL-00011" summary="LeaveRequestEntity created">
-      <option name="closed" value="true" />
-      <created>1737134426182</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134426182</updated>
-    </task>
-    <task id="LOCAL-00012" summary="LeaveStatus enum created">
-      <option name="closed" value="true" />
-      <created>1737134447686</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134447686</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Role enum created">
-      <option name="closed" value="true" />
-      <created>1737134462689</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134462689</updated>
-    </task>
-    <task id="LOCAL-00014" summary="PayrollEntity created">
-      <option name="closed" value="true" />
-      <created>1737134475399</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134475399</updated>
-    </task>
-    <task id="LOCAL-00015" summary="UserEntity created">
-      <option name="closed" value="true" />
-      <created>1737134496047</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134496047</updated>
-    </task>
-    <task id="LOCAL-00016" summary="changes">
-      <option name="closed" value="true" />
-      <created>1737134571778</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1737134571778</updated>
-    </task>
-    <task id="LOCAL-00017" summary="AttendanceController created">
-      <option name="closed" value="true" />
-      <created>1737138358186</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1737138358187</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Attendance dto created">
-      <option name="closed" value="true" />
-      <created>1737170763267</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1737170763282</updated>
     </task>
     <task id="LOCAL-00019" summary="Department dto created">
       <option name="closed" value="true" />
@@ -472,43 +310,211 @@
       <option name="project" value="LOCAL" />
       <updated>1737292800473</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="AttendanceController created">
+      <option name="closed" value="true" />
+      <created>1737369235532</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369235533</updated>
+    </task>
+    <task id="LOCAL-00048" summary="AttendanceServiceImpl created">
+      <option name="closed" value="true" />
+      <created>1737369268400</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369268400</updated>
+    </task>
+    <task id="LOCAL-00049" summary="DepartmentController created">
+      <option name="closed" value="true" />
+      <created>1737369839295</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369839295</updated>
+    </task>
+    <task id="LOCAL-00050" summary="DepartmentService created">
+      <option name="closed" value="true" />
+      <created>1737369853000</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369853008</updated>
+    </task>
+    <task id="LOCAL-00051" summary="DepartmentServiceImpl created">
+      <option name="closed" value="true" />
+      <created>1737369873634</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369873634</updated>
+    </task>
+    <task id="LOCAL-00052" summary="EmployeeController created">
+      <option name="closed" value="true" />
+      <created>1737369887195</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369887195</updated>
+    </task>
+    <task id="LOCAL-00053" summary="EmployeeService created">
+      <option name="closed" value="true" />
+      <created>1737369900306</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369900306</updated>
+    </task>
+    <task id="LOCAL-00054" summary="EmployeeServiceImpl created">
+      <option name="closed" value="true" />
+      <created>1737369915853</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369915853</updated>
+    </task>
+    <task id="LOCAL-00055" summary="LeaveBalanceController created">
+      <option name="closed" value="true" />
+      <created>1737369934119</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369934119</updated>
+    </task>
+    <task id="LOCAL-00056" summary="LeaveBalanceService created">
+      <option name="closed" value="true" />
+      <created>1737369944643</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369944643</updated>
+    </task>
+    <task id="LOCAL-00057" summary="LeaveBalanceServiceImpl created">
+      <option name="closed" value="true" />
+      <created>1737369955595</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369955595</updated>
+    </task>
+    <task id="LOCAL-00058" summary="LeaveRequestController created">
+      <option name="closed" value="true" />
+      <created>1737369971456</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1737369971456</updated>
+    </task>
+    <task id="LOCAL-00059" summary="LeaveRequestService created">
+      <option name="closed" value="true" />
+      <created>1737370105985</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1737370105985</updated>
+    </task>
+    <task id="LOCAL-00060" summary="LeaveRequestServiceImpl created">
+      <option name="closed" value="true" />
+      <created>1737370155996</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1737370155996</updated>
+    </task>
+    <task id="LOCAL-00061" summary="PayrollController created">
+      <option name="closed" value="true" />
+      <created>1737370174611</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1737370174612</updated>
+    </task>
+    <task id="LOCAL-00062" summary="PayrollService created">
+      <option name="closed" value="true" />
+      <created>1737370192609</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1737370192609</updated>
+    </task>
+    <task id="LOCAL-00063" summary="PayrollServiceImpl created">
+      <option name="closed" value="true" />
+      <created>1737370203438</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1737370203438</updated>
+    </task>
+    <task id="LOCAL-00064" summary="UserController created">
+      <option name="closed" value="true" />
+      <created>1737370216755</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1737370216755</updated>
+    </task>
+    <task id="LOCAL-00065" summary="UserEntity created">
+      <option name="closed" value="true" />
+      <created>1737370232155</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1737370232155</updated>
+    </task>
+    <task id="LOCAL-00066" summary="UserService created">
+      <option name="closed" value="true" />
+      <created>1737370244105</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1737370244105</updated>
+    </task>
+    <task id="LOCAL-00067" summary="UserServiceImpl created">
+      <option name="closed" value="true" />
+      <created>1737370258631</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1737370258631</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="LeaveRequest dto created" />
-    <MESSAGE value="Payroll dto created" />
-    <MESSAGE value="User dto created" />
-    <MESSAGE value="User repo created" />
-    <MESSAGE value="PayrollRepository created" />
-    <MESSAGE value="LeaveRequestRepository created" />
-    <MESSAGE value="LeaveBalanceRepository created" />
-    <MESSAGE value="EmployeeRepository created" />
-    <MESSAGE value="DepartmentRepository created" />
-    <MESSAGE value="AttendanceRepository created" />
-    <MESSAGE value="Config class created" />
-    <MESSAGE value="AttendanceException created" />
-    <MESSAGE value="DepartmentException created" />
-    <MESSAGE value="EmployeeException created" />
-    <MESSAGE value="GlobalExceptionHandler created" />
-    <MESSAGE value="LeaveBalanceException created" />
-    <MESSAGE value="LeaveRequestException created" />
-    <MESSAGE value="PayrollException created" />
-    <MESSAGE value="SuccessResponse created" />
-    <MESSAGE value="UserException created" />
     <MESSAGE value="User created" />
     <MESSAGE value="lombok version changed" />
     <MESSAGE value="ErrorResponse created" />
-    <MESSAGE value="AttendanceController created" />
     <MESSAGE value="AttendanceService created" />
-    <option name="LAST_COMMIT_MESSAGE" value="AttendanceService created" />
+    <MESSAGE value="AttendanceController created" />
+    <MESSAGE value="AttendanceServiceImpl created" />
+    <MESSAGE value="DepartmentController created" />
+    <MESSAGE value="DepartmentService created" />
+    <MESSAGE value="DepartmentServiceImpl created" />
+    <MESSAGE value="EmployeeController created" />
+    <MESSAGE value="EmployeeService created" />
+    <MESSAGE value="EmployeeServiceImpl created" />
+    <MESSAGE value="LeaveBalanceController created" />
+    <MESSAGE value="LeaveBalanceService created" />
+    <MESSAGE value="LeaveBalanceServiceImpl created" />
+    <MESSAGE value="LeaveRequestController created" />
+    <MESSAGE value="LeaveRequestService created" />
+    <MESSAGE value="LeaveRequestServiceImpl created" />
+    <MESSAGE value="PayrollController created" />
+    <MESSAGE value="PayrollService created" />
+    <MESSAGE value="PayrollServiceImpl created" />
+    <MESSAGE value="UserController created" />
+    <MESSAGE value="UserEntity created" />
+    <MESSAGE value="UserService created" />
+    <MESSAGE value="UserServiceImpl created" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserServiceImpl created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>11</line>
+          <line>12</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
