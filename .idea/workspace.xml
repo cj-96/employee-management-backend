@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ebf41fc-dad3-4e8b-b14c-eab02dd0131e" name="Changes" comment="UserServiceImpl created">
+    <list default="true" id="7ebf41fc-dad3-4e8b-b14c-eab02dd0131e" name="Changes" comment="task management">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/TaskEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/TaskStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/TaskException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/TaskServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PayrollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PayrollController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/EmployeeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/EmployeeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/impl/EmployeeServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +68,12 @@
     "Maven.employee-management-backend [clean].executor": "Run",
     "Maven.employee-management-backend [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Spring/bike/spring-backend",
+    "last_opened_file_path": "C:/Users/Upeka/Downloads/auth",
     "onboarding.tips.debug.path": "C:/Spring/employee-management-backend/src/main/java/org/example/Main.java",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
@@ -85,22 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737125298100</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Department dto created">
-      <option name="closed" value="true" />
-      <created>1737170777175</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1737170777175</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Employee dto created">
-      <option name="closed" value="true" />
-      <created>1737170787346</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1737170787346</updated>
     </task>
     <task id="LOCAL-00021" summary="LeaveBalance dto created">
       <option name="closed" value="true" />
@@ -478,11 +478,37 @@
       <option name="project" value="LOCAL" />
       <updated>1737370258631</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="UserServiceImpl created">
+      <option name="closed" value="true" />
+      <created>1738123114678</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1738123114679</updated>
+    </task>
+    <task id="LOCAL-00069" summary="task management">
+      <option name="closed" value="true" />
+      <created>1743519508109</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1743519508109</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="User created" />
     <MESSAGE value="lombok version changed" />
     <MESSAGE value="ErrorResponse created" />
     <MESSAGE value="AttendanceService created" />
@@ -507,7 +533,8 @@
     <MESSAGE value="UserEntity created" />
     <MESSAGE value="UserService created" />
     <MESSAGE value="UserServiceImpl created" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserServiceImpl created" />
+    <MESSAGE value="task management" />
+    <option name="LAST_COMMIT_MESSAGE" value="task management" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

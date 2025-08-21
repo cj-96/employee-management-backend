@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 public class PayrollController {
 
     private final PayrollService service;
-    private final String SUCCESS_STATUS = "success";
+    private static final String SUCCESS_STATUS = "success";
 
     @PostMapping
     public ResponseEntity<SuccessResponse> persist(@RequestBody Payroll payroll) {

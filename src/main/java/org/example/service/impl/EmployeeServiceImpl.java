@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
@@ -23,6 +24,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeRepository repository;
     private final ModelMapper mapper;
     private static final String NOT_FOUND_MESSAGE = "Employee not found with ID: ";
+    private static final String WARN_MESSAGE_COUNT = "Employee count retrieval returned null. Defaulting to 0.";
 
     @Override
     public Employee persist(Employee employee) {
@@ -97,14 +99,129 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void delete(Long id) {
         try {
-            EmployeeEntity employee = repository.findById(id)
-                    .orElseThrow(() -> new EmployeeException(NOT_FOUND_MESSAGE + id));
+            EmployeeEntity employee = repository.findById(id).orElse(null);
+
+            if (employee == null) {
+                log.warn("Employee with ID {} not found", id);
+                throw new EmployeeException(NOT_FOUND_MESSAGE + id);
+            }
 
             repository.delete(employee);
             log.info("Employee with ID {} deleted successfully", id);
         } catch (DataAccessException dae) {
             log.error("Database error while deleting employee with ID: {}", id, dae);
+            throw new EmployeeException("Unable to delete employee record due to a database error");
+        } catch (Exception e) {
+            log.error("Unexpected error while deleting employee with ID: {}", id, e);
             throw new EmployeeException("Unable to delete employee record");
         }
     }
+
+
+    @Override
+    public Integer retrieveCount() {
+        try {
+            Integer count = repository.retrieveCount();
+
+            if (count == null) {
+                log.warn("Employee count retrieval returned null. Defaulting to 0.");
+                return 0; // Return 0 if the count is unexpectedly null
+            }
+
+            log.info("Successfully retrieved employee count: {}", count);
+            return count;
+        } catch (DataAccessException dae) {
+            log.error("Database error while retrieving employee count", dae);
+            throw new EmployeeException("Unable to retrieve employee count due to a database error.");
+        } catch (Exception e) {
+            log.error("Unexpected error while retrieving employee count", e);
+            throw new EmployeeException("An unexpected error occurred while retrieving employee count.");
+        }
+    }
+
+    @Override
+    public Integer retrieveCountOnLeave() {
+        try {
+            Integer count = repository.retrieveCountOnLeave();
+
+            if (count == null) {
+                log.warn("Employee count retrieval returned null. Defaulting to 0.");
+                return 0; // Return 0 if the count is unexpectedly null
+            }
+
+            log.info("Successfully retrieved employee count: {}", count);
+            return count;
+        } catch (DataAccessException dae) {
+            log.error("Database error while retrieving employee count", dae);
+            throw new EmployeeException("Unable to retrieve employee count due to a database error.");
+        } catch (Exception e) {
+            log.error("Unexpected error while retrieving employee count", e);
+            throw new EmployeeException("An unexpected error occurred while retrieving employee count.");
+        }
+    }
+
+    @Override
+    public Integer retrieveCountAtWork() {
+        try {
+            Integer count = repository.retrieveCountAtWork();
+
+            if (count == null) {
+                log.warn("Employee count retrieval returned null. Defaulting to 0.");
+                return 0; // Return 0 if the count is unexpectedly null
+            }
+
+            log.info("Successfully retrieved employee count: {}", count);
+            return count;
+        } catch (DataAccessException dae) {
+            log.error("Database error while retrieving employee count", dae);
+            throw new EmployeeException("Unable to retrieve employee count due to a database error.");
+        } catch (Exception e) {
+            log.error("Unexpected error while retrieving employee count", e);
+            throw new EmployeeException("An unexpected error occurred while retrieving employee count.");
+        }
+    }
+
+    @Override
+    public Integer retrieveCountPending() {
+        try {
+            Integer count = repository.retrieveCountPending();
+
+            if (count == null) {
+                log.warn("Employee count retrieval returned null. Defaulting to 0.");
+                return 0; // Return 0 if the count is unexpectedly null
+            }
+
+            log.info("Successfully retrieved employee count: {}", count);
+            return count;
+        } catch (DataAccessException dae) {
+            log.error("Database error while retrieving employee count", dae);
+            throw new EmployeeException("Unable to retrieve employee count due to a database error.");
+        } catch (Exception e) {
+            log.error("Unexpected error while retrieving employee count", e);
+            throw new EmployeeException("An unexpected error occurred while retrieving employee count.");
+        }
+    }
+
+    @Override
+    public Map<String, Integer> getEmployeeCountPerDepartment() {
+        try {
+            Map<String, Integer> employeeCountPerDepartment = repository.getEmployeeCountPerDepartment();
+
+            if (employeeCountPerDepartment == null) {
+                log.warn("Department employee count retrieval returned null");
+                throw new EmployeeException("No department employee count data available");
+            }
+
+            log.info("Successfully retrieved employee count per department for {} departments",
+                    employeeCountPerDepartment.size());
+            return employeeCountPerDepartment;
+        } catch (DataAccessException dae) {
+            log.error("Database error while retrieving employee count per department", dae);
+            throw new EmployeeException("Unable to retrieve employee count per department due to a database error");
+        } catch (Exception e) {
+            log.error("Unexpected error while retrieving employee count per department", e);
+            throw new EmployeeException("An unexpected error occurred while retrieving employee count per department");
+        }
+    }
+
 }

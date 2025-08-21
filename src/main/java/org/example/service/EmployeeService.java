@@ -1,5 +1,7 @@
 package org.example.service;
 
+import java.util.Map;
+
 import org.example.dto.Employee;
 
 import java.util.List;
@@ -14,4 +16,14 @@ public interface EmployeeService {
     Employee update(Long id, Employee employeeDetails);
 
     void delete(Long id);
+
+    Integer retrieveCount();
+
+    Integer retrieveCountOnLeave();
+
+    Integer retrieveCountAtWork();
+
+    Integer retrieveCountPending();
+
+    Map<String,Integer> getEmployeeCountPerDepartment();
 }

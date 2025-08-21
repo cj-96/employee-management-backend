@@ -74,4 +74,13 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                 .build();
         return ResponseEntity.ok().body(errorResponse);
     }
+
+    @ExceptionHandler(TaskException.class)
+    ResponseEntity<ErrorResponse> handleTaskException(TaskException ex){
+        ErrorResponse errorResponse = ErrorResponse.builder()
+                .status(FAILEDSTATUS)
+                .message(ex.getMessage())
+                .build();
+        return ResponseEntity.ok().body(errorResponse);
+    }
 }
